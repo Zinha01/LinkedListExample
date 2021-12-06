@@ -9,7 +9,9 @@ void Init (List& L)
 
 bool IsEmpty (List L)
 {return (L == NULL); }
-  
+
+
+//function to add an entry into a list  
 void Insert (DataType e, List& L)
 {List NewNode = new node;
   NewNode->data = e;
@@ -17,6 +19,7 @@ void Insert (DataType e, List& L)
   L = NewNode;
 }   
 
+//function to remove an entry from a list
 void Delete (DataType e, List& L)
 {List CurrNode = L;
     List PrevNode = NULL;
@@ -35,6 +38,7 @@ void Delete (DataType e, List& L)
      }
 }
 
+//function to display an entry
 void ShowData (List  L)
 { while ( L != NULL)                   
  {  cout << L->data <<endl;                                 

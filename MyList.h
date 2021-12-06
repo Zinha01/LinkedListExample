@@ -10,7 +10,11 @@ struct node
 typedef  node*  List;
            
 void Init  (List&);
+
 bool IsEmpty (List );
+
 void  Insert (DataType, List&);
+
 void  Delete (DataType, List&); 
+
 void  ShowData (List);
